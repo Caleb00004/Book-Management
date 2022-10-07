@@ -1,0 +1,6 @@
+.page-layout {
+/*  background-color: green; */
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: calc(95.6vh); 
+}

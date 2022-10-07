@@ -13,6 +13,9 @@ export const apiSlice = createApi({
         }),
         getAuthor: builder.query({
             query: () => '/author',
+            transformResponse: res => (
+                console.log(res)
+            )
         })
     })
 })
