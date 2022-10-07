@@ -1,0 +1,47 @@
+.home {
+/*    background-color: red; */
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.Hero-Section {
+/*    background-color: green; */
+    background-image: linear-gradient(rgb(210, 63, 239), #A83Ad3 , rgb(83, 14, 83));
+    color: white;
+    border-radius: 10px;
+    height: 150px;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+
+.Hero-Section button {
+    margin-top: 0.5rem;
+    border: none;
+    background-color: white;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+    padding: 6px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+}
+
+.book-item {
+    border-radius: 10px;
+    border: 0.1px solid rgb(223, 219, 219); 
+    padding: 10px ;    
+    box-shadow: 6px 8px 8px -6px black;    
+}
+
+.book-item p {
+    max-width: 100%;
+}
+
+.book-item .author {
+    font-style: italic;
+}

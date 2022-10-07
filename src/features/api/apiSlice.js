@@ -7,9 +7,9 @@ export const apiSlice = createApi({
     endpoints: builder => ({
         getBooks: builder.query({
             query: () => '/books',
-            transformResponse: res => (
-                console.log(res)
-            )
+            transformResponse: res => {
+                return res
+            }
         }),
         getAuthor: builder.query({
             query: () => '/author',

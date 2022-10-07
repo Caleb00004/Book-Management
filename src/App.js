@@ -11,10 +11,10 @@ import SingleBook from './features/books/singleBook'
 
 function App() {
 //  const {getAuthor: authors} = useGetAuthorQuery()
-//  useGetAuthorQuery()
-  const {data, isSucess, isLoading, isError, error} = useGetBooksQuery()
-
-  isSucess && console.log(data)
+  useGetAuthorQuery()
+  const {data, isSuccess, isLoading, isError, error} = useGetBooksQuery()
+//  console.log(useGetBooksQuery().data)
+  isSuccess && console.log(data)
   return (
     <>
       <Navbar />
