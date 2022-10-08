@@ -2,6 +2,11 @@
 /*  background-color: green; */
   display: grid;
   grid-template-columns: 15% 85%;
-
 /*  height: calc(95.6vh);  */
 }
+
+.addbookPage, .home {
+  padding-left: 2em;
+  padding-right: 2em; 
+}
+

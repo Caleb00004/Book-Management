@@ -1,5 +1,6 @@
 import { retry } from "@reduxjs/toolkit/dist/query"
 import { useState } from "react"
+import './addbook.css'
 
 
 export default function AddBook({authorLoaded, authorData}) {
@@ -26,12 +27,12 @@ export default function AddBook({authorLoaded, authorData}) {
     }
 
     return (
-        <div>
+        <div className="addbookPage">
             <h1>AddBook kk</h1>
 
             <form onSubmit={handleForm}>
                 <div>
-                    <label htmlFor="bookAuthor"></label>
+                    <label htmlFor="bookAuthor">Choose Author</label>
                     <select placeholder="sels">
                     <option value={""}></option>
                     {authorList}
