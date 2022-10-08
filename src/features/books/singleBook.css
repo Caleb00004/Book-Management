@@ -1,0 +1,52 @@
+/* 
+    0.5005
+    60 stg 2x val 
+    0.47 sl
+    0.56 tp
+    0.59
+
+    1.83 -
+    3.57 + 
+*/
+
+* {
+/*    outline: 1px solid limegreen; */
+}
+
+.singleBook {
+    text-align: center;
+    padding-top: 4em;
+    font-size: 1.2rem;
+}
+
+.singleBook > p,h3{
+    text-align: justify;
+}
+
+.button-group {
+/*    background-color: green; */
+}
+
+.button-group button {
+    border: none;
+    border-radius: 5px;
+    margin: 1em 1em 0px 1em;
+    padding: 0.6em 2em 0.6em 2em;
+    color: white;
+}
+
+.delete-btn {
+    background-color: red;
+}
+
+.edit-btn {
+    background-color: purple;
+}
+
+.delete-btn:hover {
+    background-color: rgb(231, 47, 47)
+}
+
+.edit-btn:hover {
+    background-color: rgb(200, 38, 200);    
+}

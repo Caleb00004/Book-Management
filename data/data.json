@@ -125,6 +125,27 @@
       "title": "It is working",
       "summary": "I told you.. hehe",
       "price": "20"
+    },
+    {
+      "id": 14,
+      "userId": 2,
+      "title": "geo",
+      "summary": "Back",
+      "price": "12"
+    },
+    {
+      "id": 15,
+      "userId": 4,
+      "title": "Author should work",
+      "summary": "TOld you...heheh",
+      "price": "1200"
+    },
+    {
+      "id": 16,
+      "userId": 1,
+      "title": "Just Me Testing",
+      "summary": "Testing 1 2 Testing",
+      "price": "20"
     }
   ],
   "author": [

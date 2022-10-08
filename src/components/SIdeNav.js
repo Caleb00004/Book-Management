@@ -10,7 +10,7 @@ export default function SideNav() {
                 <span>Books</span>
             </div>
             <ul>
-                <li><Link to={'/'}>Dashboard</Link></li>
+                <li ><Link to={'/'}>Dashboard</Link></li>
                 <li><Link to={'/addbook'}>Add Books</Link></li>
                 <li><Link to={'/booklist'}>Books List</Link></li>
                 <li><Link to={'/checkout'}>Checkout Page</Link></li>

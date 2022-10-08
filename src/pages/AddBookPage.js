@@ -10,6 +10,7 @@ export default function AddBook({authorLoaded, authorData}) {
     const [bookTitle, setBookTitle] = useState('')
     const [bookSummary, setBookSummary] = useState('')
     const [bookPrice, setBookPrice] = useState('')
+    const [authorId, setAuthorId] = useState('')
     const [addRequestStatus, setAddRequestStatus] = useState('idle')
     const [addBook] = useAddBooksMutation()
     const navigate = useNavigate()
@@ -19,18 +20,22 @@ export default function AddBook({authorLoaded, authorData}) {
     }
     
     const authorList = authorData.map(author => (
-        <option key={author.id}>{author.name}</option>
+        <option key={author.id} value={author.id}>{author.name}</option>
     ))
-
+    
     function handleForm(e) {
-        console.log('called')
+        console.log(e)
         e.preventDefault()
 
+        console.log(authorId)
         if (addRequestStatus == 'idle') {
+
+            console.log(authorId)
+
             try {
                 setAddRequestStatus('pending')
 //                dispatch(addNewPost({ title, body: content, userId })).unwrap()
-                addBook({id: 13, userId: 2, title: bookTitle, summary: bookSummary, price: bookPrice}).unwrap()
+                addBook({id: 16, userId: Number(authorId), title: bookTitle, summary: bookSummary, price: bookPrice}).unwrap()
 
                 setBookTitle('')
                 setBookSummary('')
@@ -53,10 +58,10 @@ export default function AddBook({authorLoaded, authorData}) {
             <form onSubmit={handleForm}>
                 <div>
                     <label htmlFor="bookAuthor">Choose Author</label>
-                    <select placeholder="sels">
-                    <option value={""}></option>
-                    {authorList}
-                </select>
+                    <select placeholder="sels" value={authorId} onChange={(e) => setAuthorId(e.target.value)}>
+                        <option value={""}></option>
+                        {authorList}
+                    </select>
                 </div>
                 <label htmlFor="addBook">Enter Book Title</label>
                 <div className="addBook">

@@ -5,7 +5,7 @@
 /*  height: calc(95.6vh);  */
 }
 
-.addbookPage, .home {
+.addbookPage, .home, .singleBook {
   padding-left: 2em;
   padding-right: 2em; 
 }

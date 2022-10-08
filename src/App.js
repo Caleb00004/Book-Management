@@ -25,10 +25,10 @@ function App() {
           <Route path='/' element={<Home bookData={books} authorData={authors} authorLoaded={authorLoaded} bookLoaded={bookLoaded} error={error} loading={isLoading}/>}></Route>
 
           <Route path='/booklist' element={<BookList />}></Route>
+          <Route path='/singlePage/:bookId' element={<SingleBook />} />
 
           <Route path='addbook'>
             <Route index  element={<AddBook authorLoaded={authorLoaded} authorData={authors}/>} />
-            <Route path=':bookId' element={<SingleBook />} />
           </Route>
 
           <Route path='/checkout' element={<Checkout />} />

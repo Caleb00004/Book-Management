@@ -1,5 +1,10 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 
+export const globalState = {
+    bookData: [],
+    AuthorsData: []
+}
+
 export const apiSlice = createApi({
     reducerPath: 'api',
     tagTypes: ['book'],
@@ -8,6 +13,7 @@ export const apiSlice = createApi({
         getBooks: builder.query({
             query: () => '/books',
             transformResponse: res => {
+                globalState.bookData = res
                 return res
             },
             providesTags: ['book']
@@ -15,6 +21,7 @@ export const apiSlice = createApi({
         getAuthor: builder.query({
             query: () => '/author',
             transformResponse: res => (
+                globalState.AuthorsData = res,
                 res
             )
         }),
