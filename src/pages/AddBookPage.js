@@ -2,8 +2,8 @@ import { retry } from "@reduxjs/toolkit/dist/query"
 import { useNavigate } from "react-router"
 import { useState } from "react"
 import { useAddBooksMutation } from "../features/api/apiSlice"
+import { nanoid } from "nanoid"
 import './addbook.css'
-
 
 export default function AddBook({authorLoaded, authorData}) {
 
@@ -34,7 +34,7 @@ export default function AddBook({authorLoaded, authorData}) {
 
             try {
                 setAddRequestStatus('pending')
-                addBook({id: 10, userId: Number(authorId), title: bookTitle, summary: bookSummary, price: bookPrice}).unwrap()
+                addBook({id: nanoid(), userId: Number(authorId), title: bookTitle, summary: bookSummary, price: bookPrice}).unwrap()
                     .then(fulfilled => navigate('/'))
                     .catch(rejected => console.error(rejected)) 
 
@@ -49,7 +49,7 @@ export default function AddBook({authorLoaded, authorData}) {
         }
     }
 
-    const canAdd = [bookTitle, bookSummary, bookPrice].every(Boolean)
+    const canAdd = [bookTitle, bookSummary, bookPrice].every(Boolean) && addRequestStatus == 'idle'
 
     return (
         <div className="addbookPage">

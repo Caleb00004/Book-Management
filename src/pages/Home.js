@@ -28,7 +28,8 @@ export default function Home({bookData, authorData, authorLoaded, bookLoaded, er
         </div> */
         ))
     } else {
-        content = <h1>Error occured: {error}</h1>
+        content = <h1>Error occured: {error.error}</h1>
+        console.log(error)
     }
 
     return (
