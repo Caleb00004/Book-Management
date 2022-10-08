@@ -1,7 +1,7 @@
 .page-layout {
 /*  background-color: green; */
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 85%;
 
 /*  height: calc(95.6vh);  */
 }

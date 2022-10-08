@@ -6,7 +6,8 @@
 
 .Hero-Section {
 /*    background-color: green; */
-    background-image: linear-gradient(rgb(210, 63, 239), #A83Ad3 , rgb(83, 14, 83));
+/*    background-image: linear-gradient(rgb(192, 67, 216), #b45fd5 , rgb(130, 41, 130)); */
+    background-image: linear-gradient(to right, rgb(205, 28, 178) , rgb(205, 99, 176));
     color: white;
     border-radius: 10px;
     height: 150px;
@@ -19,10 +20,15 @@
     border: none;
     background-color: white;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 10px;
-    padding: 6px;
+    border-radius: 5px;
+    padding: 7px;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
+    cursor: pointer;
+}
+
+.Hero-Section button:hover {
+    background-color: rgb(223, 215, 215);
 }
 
 .books-grid {
@@ -40,6 +46,7 @@
 
 .book-item p {
     max-width: 100%;
+    font-size: 0.8rem;
 }
 
 .book-item .author {

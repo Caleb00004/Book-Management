@@ -10,23 +10,24 @@ import SideNav from './components/SIdeNav';
 import SingleBook from './features/books/singleBook'
 
 function App() {
-//  const {getAuthor: authors} = useGetAuthorQuery()
-  useGetAuthorQuery()
-  const {data, isSuccess, isLoading, isError, error} = useGetBooksQuery()
+  const {isSuccess: authorLoaded, data: authors} = useGetAuthorQuery()
+  const {data: books, isSuccess: bookLoaded, isLoading, isError, error} = useGetBooksQuery()
+//  console.log(books)  
 //  console.log(useGetBooksQuery().data)
-  isSuccess && console.log(data)
+//console.log(authors)
+//console.log(books)
   return (
     <>
       <Navbar />
       <div className='page-layout'>
         <SideNav />
         <Routes>
-          <Route path='/' element={<Home />}></Route>
+          <Route path='/' element={<Home bookData={books} authorData={authors} authorLoaded={authorLoaded} bookLoaded={bookLoaded} error={error} loading={isLoading}/>}></Route>
 
           <Route path='/booklist' element={<BookList />}></Route>
 
           <Route path='addbook'>
-            <Route index  element={<AddBook />} />
+            <Route index  element={<AddBook authorLoaded={authorLoaded} authorData={authors}/>} />
             <Route path=':bookId' element={<SingleBook />} />
           </Route>
 

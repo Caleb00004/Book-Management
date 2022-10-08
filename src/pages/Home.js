@@ -1,24 +1,26 @@
-import { useGetBooksQuery } from '../features/api/apiSlice'
+import { useGetBooksQuery, useGetAuthorQuery } from '../features/api/apiSlice'
 import './home.css'
 
-export default function Home() {
-    const {data, isSuccess, isLoading, isError, error} = useGetBooksQuery()
+export default function Home({bookData, authorData, authorLoaded, bookLoaded, error, loading}) {
 
-//    isSucess && console.log(data)
+    function getAuthor(id) {
+        const currentAuthor = authorData.filter(item => item.id === id)
+        return currentAuthor[0].name
+    }
 
     let content;
-    if (isLoading) {
+    if (loading) {
         content = <h1>Loading Data</h1>
-    } else if (isSuccess) {
-        content = data.map(item => (
+    } else if (bookLoaded && authorLoaded) {
+        content = bookData.map(item => (
             <div className='book-item'>
                 <h3 style={{color: 'purple'}}>{item.title}</h3>
-                <p className='author'>Author: ....</p>
+                <p className='author'>Author: {getAuthor(item.userId)}</p>
                 <p>price: {item.price}$</p>
                 <p>{item.summary.substring(0,50)} <span style={{color:'purple', fontStyle:'italic'}}>more...</span></p>
             </div>
         ))
-    } else if (isError) {
+    } else {
         content = <h1>Error occured: {error}</h1>
     }
 
@@ -31,8 +33,8 @@ export default function Home() {
                 <button>Discover More</button>
             </div>
             <br/><br/>
-            <h1>Books Availble</h1>
-
+            <h2>Books Availble</h2>
+            <br/><br/>
             <div className='books-grid'>
                 {content}
             </div>

@@ -14,8 +14,15 @@ export const apiSlice = createApi({
         getAuthor: builder.query({
             query: () => '/author',
             transformResponse: res => (
-                console.log(res)
+                res
             )
+        }),
+        addBooks: builder.mutation({
+            query: (book) => ({
+                url: '/books',
+                method: 'POST',
+                body: book,
+            })
         })
     })
 })
