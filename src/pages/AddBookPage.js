@@ -1,5 +1,7 @@
 import { retry } from "@reduxjs/toolkit/dist/query"
+import { useNavigate } from "react-router"
 import { useState } from "react"
+import { useAddBooksMutation } from "../features/api/apiSlice"
 import './addbook.css'
 
 
@@ -8,6 +10,9 @@ export default function AddBook({authorLoaded, authorData}) {
     const [bookTitle, setBookTitle] = useState('')
     const [bookSummary, setBookSummary] = useState('')
     const [bookPrice, setBookPrice] = useState('')
+    const [addRequestStatus, setAddRequestStatus] = useState('idle')
+    const [addBook] = useAddBooksMutation()
+    const navigate = useNavigate()
 
     if (!authorLoaded) {
         return <h1>Data Loading</h1>
@@ -18,13 +23,28 @@ export default function AddBook({authorLoaded, authorData}) {
     ))
 
     function handleForm(e) {
+        console.log('called')
         e.preventDefault()
 
-        
-        console.log(bookTitle)
-        console.log(bookSummary)
-        console.log(bookPrice)
+        if (addRequestStatus == 'idle') {
+            try {
+                setAddRequestStatus('pending')
+//                dispatch(addNewPost({ title, body: content, userId })).unwrap()
+                addBook({id: 13, userId: 2, title: bookTitle, summary: bookSummary, price: bookPrice}).unwrap()
+
+                setBookTitle('')
+                setBookSummary('')
+                setBookPrice('')
+                navigate('/')
+            } catch (err) {
+                console.error('Failed to save the post', err)
+            } finally {
+                setAddRequestStatus('idle')
+            }
+        }
     }
+
+    const canAdd = [bookTitle, bookSummary, bookPrice].every(Boolean)
 
     return (
         <div className="addbookPage">
@@ -68,7 +88,7 @@ export default function AddBook({authorLoaded, authorData}) {
                         placeholder="1"
                     />
                 </div>
-                <button className="submit">
+                <button disabled={!canAdd} className="submit">
                     submit
                 </button>
             </form>

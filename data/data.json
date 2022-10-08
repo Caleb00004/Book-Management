@@ -1,196 +1,224 @@
 {
-    "books": [
-      {
-        "userId": 1,
-        "id": 1,
-        "title": "How to be Rich!!",
-        "summary": "This wonderful book Talks about what is the main essesne of making bread because break yeahh is very good your health.",
-        "price": 200
-      },
-      {
-        "userId": 1,
-        "id": 2,
-        "title": "Trade Forex like a Pro",
-        "summary": "Understand the basics/fundamentals and tradev the forex market like a Pro. Plus you get a free membership.",
-        "price": 50
-      },
-      {
-        "userId": 3,
-        "id": 3,
-        "title": "Binance Futures",
-        "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-        "price": 50
-      },
-      {
-        "userId": 4,
-        "id": 4,
-        "title": "Binance Futures",
-        "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-        "price": 50
-      },
-      {
-        "userId": 2,
-        "id": 5,
-        "title": "Binance Futures",
-        "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-        "price": 50
-      },
-      {
-        "userId": 3,
-        "id": 6,
-        "title": "Binance Futures",
-        "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-        "price": 50
-      },
-      {
-        "userId": 3,
-        "id": 6,
-        "title": "Binance Futures",
-        "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-        "price": 50
-      },
-      {
-        "userId": 3,
-        "id": 6,
-        "title": "Binance Futures",
-        "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-        "price": 50
-      },
-      {
-        "userId": 3,
-        "id": 6,
-        "title": "Binance Futures",
-        "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-        "price": 50
-      },
-      {
-        "userId": 3,
-        "id": 6,
-        "title": "Binance Futures",
-        "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-        "price": 50
-      },
-      {
-        "userId": 3,
-        "id": 6,
-        "title": "Binance Futures",
-        "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-        "price": 50
-      },
-      {
-        "userId": 3,
-        "id": 6,
-        "title": "Binance Futures",
-        "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-        "price": 50
-      },
-      {
-        "userId": 3,
-        "id": 6,
-        "title": "Binance Futures",
-        "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-        "price": 50
-      },
-      {
-        "userId": 3,
-        "id": 6,
-        "title": "Binance Futures",
-        "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-        "price": 50
-      }
-    ],
-    "author": [
+  "books": [
     {
-        "id": 1,
-        "name": "Jack Daniels",
-        "username": "Jack",
-        "email": "Sincere@april.biz",
-        "address": {
-            "street": "Kulas Light",
-            "suite": "Apt. 556",
-            "city": "Gwenborough",
-            "zipcode": "92998-3874",
-            "geo": {
-                "lat": "-37.3159",
-                "lng": "81.1496"
-            }
-        },
-        "phone": "1-770-736-8031 x56442",
-        "website": "hildegard.org",
-        "company": {
-            "name": "Romaguera-Crona",
-            "catchPhrase": "Multi-layered client-server neural-net",
-            "bs": "harness real-time e-markets"
-        }
+      "userId": 1,
+      "id": 1,
+      "title": "How to be Rich!!",
+      "summary": "This wonderful book Talks about what is the main essesne of making bread because break yeahh is very good your health.",
+      "price": 200
     },
     {
-        "id": 2,
-        "name": "Ervin Howell",
-        "username": "Antonette",
-        "email": "Shanna@melissa.tv",
-        "address": {
-            "street": "Victor Plains",
-            "suite": "Suite 879",
-            "city": "Wisokyburgh",
-            "zipcode": "90566-7771",
-            "geo": {
-            "lat": "-43.9509",
-            "lng": "-34.4618"
-            }
-        },
-        "phone": "010-692-6593 x09125",
-        "website": "anastasia.net",
-        "company": {
-            "name": "Deckow-Crist",
-            "catchPhrase": "Proactive didactic contingency",
-            "bs": "synergize scalable supply-chains"
+      "userId": 1,
+      "id": 2,
+      "title": "Trade Forex like a Pro",
+      "summary": "Understand the basics/fundamentals and tradev the forex market like a Pro. Plus you get a free membership.",
+      "price": 50
+    },
+    {
+      "userId": 3,
+      "id": 3,
+      "title": "Binance Futures",
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
+      "price": 50
+    },
+    {
+      "userId": 4,
+      "id": 4,
+      "title": "Binance Futures",
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
+      "price": 50
+    },
+    {
+      "userId": 2,
+      "id": 5,
+      "title": "Binance Futures",
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
+      "price": 50
+    },
+    {
+      "userId": 3,
+      "id": 6,
+      "title": "Binance Futures",
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
+      "price": 50
+    },
+    {
+      "userId": 3,
+      "id": 6,
+      "title": "Binance Futures",
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
+      "price": 50
+    },
+    {
+      "userId": 3,
+      "id": 6,
+      "title": "Binance Futures",
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
+      "price": 50
+    },
+    {
+      "userId": 3,
+      "id": 6,
+      "title": "Binance Futures",
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
+      "price": 50
+    },
+    {
+      "userId": 3,
+      "id": 6,
+      "title": "Binance Futures",
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
+      "price": 50
+    },
+    {
+      "userId": 3,
+      "id": 6,
+      "title": "Binance Futures",
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
+      "price": 50
+    },
+    {
+      "userId": 3,
+      "id": 6,
+      "title": "Binance Futures",
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
+      "price": 50
+    },
+    {
+      "userId": 3,
+      "id": 6,
+      "title": "Binance Futures",
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
+      "price": 50
+    },
+    {
+      "userId": 3,
+      "id": 6,
+      "title": "Binance Futures",
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
+      "price": 50
+    },
+    {
+      "id": 10,
+      "userId": 2,
+      "title": "Testing",
+      "summary": "Testing 1 2 Testing",
+      "price": "200"
+    },
+    {
+      "id": 11,
+      "userId": 2,
+      "title": "Yes Boyy",
+      "summary": "This is a book about yes boyy",
+      "price": "20"
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "title": "hiuo uop op",
+      "summary": "lorem ipsum odlor nuit dolor mximillia",
+      "price": "21"
+    },
+    {
+      "id": 13,
+      "userId": 2,
+      "title": "It is working",
+      "summary": "I told you.. hehe",
+      "price": "20"
+    }
+  ],
+  "author": [
+    {
+      "id": 1,
+      "name": "Jack Daniels",
+      "username": "Jack",
+      "email": "Sincere@april.biz",
+      "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
         }
-        },
-        {
-        "id": 3,
-        "name": "Clementine Bauch",
-        "username": "Samantha",
-        "email": "Nathan@yesenia.net",
-        "address": {
-            "street": "Douglas Extension",
-            "suite": "Suite 847",
-            "city": "McKenziehaven",
-            "zipcode": "59590-4157",
-            "geo": {
-            "lat": "-68.6102",
-            "lng": "-47.0653"
-            }
-        },
-        "phone": "1-463-123-4447",
-        "website": "ramiro.info",
-        "company": {
-            "name": "Romaguera-Jacobson",
-            "catchPhrase": "Face to face bifurcated interface",
-            "bs": "e-enable strategic applications"
+      },
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "bs": "harness real-time e-markets"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "address": {
+        "street": "Victor Plains",
+        "suite": "Suite 879",
+        "city": "Wisokyburgh",
+        "zipcode": "90566-7771",
+        "geo": {
+          "lat": "-43.9509",
+          "lng": "-34.4618"
         }
-        },
-        {
-        "id": 4,
-        "name": "Patricia Lebsack",
-        "username": "Karianne",
-        "email": "Julianne.OConner@kory.org",
-        "address": {
-            "street": "Hoeger Mall",
-            "suite": "Apt. 692",
-            "city": "South Elvis",
-            "zipcode": "53919-4257",
-            "geo": {
-            "lat": "29.4572",
-            "lng": "-164.2990"
-            }
-        },
-        "phone": "493-170-9623 x156",
-        "website": "kale.biz",
-        "company": {
-            "name": "Robel-Corkery",
-            "catchPhrase": "Multi-tiered zero tolerance productivity",
-            "bs": "transition cutting-edge web services"
+      },
+      "phone": "010-692-6593 x09125",
+      "website": "anastasia.net",
+      "company": {
+        "name": "Deckow-Crist",
+        "catchPhrase": "Proactive didactic contingency",
+        "bs": "synergize scalable supply-chains"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "address": {
+        "street": "Douglas Extension",
+        "suite": "Suite 847",
+        "city": "McKenziehaven",
+        "zipcode": "59590-4157",
+        "geo": {
+          "lat": "-68.6102",
+          "lng": "-47.0653"
         }
+      },
+      "phone": "1-463-123-4447",
+      "website": "ramiro.info",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Face to face bifurcated interface",
+        "bs": "e-enable strategic applications"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "username": "Karianne",
+      "email": "Julianne.OConner@kory.org",
+      "address": {
+        "street": "Hoeger Mall",
+        "suite": "Apt. 692",
+        "city": "South Elvis",
+        "zipcode": "53919-4257",
+        "geo": {
+          "lat": "29.4572",
+          "lng": "-164.2990"
         }
-    ]
+      },
+      "phone": "493-170-9623 x156",
+      "website": "kale.biz",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Multi-tiered zero tolerance productivity",
+        "bs": "transition cutting-edge web services"
+      }
+    }
+  ]
 }
