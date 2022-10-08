@@ -21,6 +21,8 @@
 
 .singleBook > p,h3{
     text-align: justify;
+    padding-bottom: 2%;
+    
 }
 
 .button-group {

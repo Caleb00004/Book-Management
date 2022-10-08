@@ -8,13 +8,6 @@
       "price": 200
     },
     {
-      "userId": 1,
-      "id": 2,
-      "title": "Trade Forex like a Pro",
-      "summary": "Understand the basics/fundamentals and tradev the forex market like a Pro. Plus you get a free membership.",
-      "price": 50
-    },
-    {
       "userId": 3,
       "id": 3,
       "title": "Binance Futures",
@@ -29,122 +22,17 @@
       "price": 50
     },
     {
-      "userId": 2,
-      "id": 5,
-      "title": "Binance Futures",
-      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": 50
-    },
-    {
-      "userId": 3,
-      "id": 6,
-      "title": "Binance Futures",
-      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": 50
-    },
-    {
-      "userId": 3,
-      "id": 6,
-      "title": "Binance Futures",
-      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": 50
-    },
-    {
-      "userId": 3,
-      "id": 6,
-      "title": "Binance Futures",
-      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": 50
-    },
-    {
-      "userId": 3,
-      "id": 6,
-      "title": "Binance Futures",
-      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": 50
-    },
-    {
-      "userId": 3,
-      "id": 6,
-      "title": "Binance Futures",
-      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": 50
-    },
-    {
-      "userId": 3,
-      "id": 6,
-      "title": "Binance Futures",
-      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": 50
-    },
-    {
-      "userId": 3,
-      "id": 6,
-      "title": "Binance Futures",
-      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": 50
-    },
-    {
-      "userId": 3,
-      "id": 6,
-      "title": "Binance Futures",
-      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": 50
-    },
-    {
-      "userId": 3,
-      "id": 6,
-      "title": "Binance Futures",
-      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": 50
-    },
-    {
-      "id": 10,
-      "userId": 2,
-      "title": "Testing",
-      "summary": "Testing 1 2 Testing",
+      "id": 16,
+      "userId": 4,
+      "title": "A tale of 2 Goats",
+      "summary": "A tale of 2 goats, A tale of style and pizzaz of 2 men. One skilled in the art of Goal scoring, the other skilled in the art of Playing Football. There is only One Goat. A tale of 2 Goats.",
       "price": "200"
     },
     {
-      "id": 11,
-      "userId": 2,
-      "title": "Yes Boyy",
-      "summary": "This is a book about yes boyy",
-      "price": "20"
-    },
-    {
-      "id": 12,
-      "userId": 2,
-      "title": "hiuo uop op",
-      "summary": "lorem ipsum odlor nuit dolor mximillia",
-      "price": "21"
-    },
-    {
-      "id": 13,
-      "userId": 2,
-      "title": "It is working",
-      "summary": "I told you.. hehe",
-      "price": "20"
-    },
-    {
-      "id": 14,
-      "userId": 2,
-      "title": "geo",
-      "summary": "Back",
-      "price": "12"
-    },
-    {
-      "id": 15,
+      "id": 10,
       "userId": 4,
-      "title": "Author should work",
-      "summary": "TOld you...heheh",
-      "price": "1200"
-    },
-    {
-      "id": 16,
-      "userId": 1,
-      "title": "Just Me Testing",
-      "summary": "Testing 1 2 Testing",
+      "title": "Jack Grealish",
+      "summary": "A day in a life let's see if you really trao, turn off the autotunes let's here you really rao. hahah send a location, i'm speeding 20 bags on aj's",
       "price": "20"
     }
   ],

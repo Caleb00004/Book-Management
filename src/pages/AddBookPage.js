@@ -34,13 +34,13 @@ export default function AddBook({authorLoaded, authorData}) {
 
             try {
                 setAddRequestStatus('pending')
-//                dispatch(addNewPost({ title, body: content, userId })).unwrap()
-                addBook({id: 16, userId: Number(authorId), title: bookTitle, summary: bookSummary, price: bookPrice}).unwrap()
+                addBook({id: 10, userId: Number(authorId), title: bookTitle, summary: bookSummary, price: bookPrice}).unwrap()
+                    .then(fulfilled => navigate('/'))
+                    .catch(rejected => console.error(rejected)) 
 
                 setBookTitle('')
                 setBookSummary('')
                 setBookPrice('')
-                navigate('/')
             } catch (err) {
                 console.error('Failed to save the post', err)
             } finally {
