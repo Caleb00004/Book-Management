@@ -23,7 +23,10 @@ function App() {
     <>
       <Navbar />
       <div className='page-layout'>
-        <SideNav />
+        <div className='mainNav'>
+          <SideNav />
+        </div>
+        <div className='otherSection'>
         <Routes>
           <Route path='/' element={<Home bookData={books} authorData={authors} error={error} bookStatus={bookStatus} authorStatus={authorStatus}/>}></Route>
 
@@ -41,6 +44,7 @@ function App() {
 
           <Route path='/checkout' element={<Checkout />} />
         </Routes>
+        </div>
       </div>
 
     </>

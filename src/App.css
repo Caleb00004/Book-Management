@@ -1,8 +1,12 @@
 .page-layout {
 /*  background-color: green; */
-  display: grid;
-  grid-template-columns: 15% 85%;
+
 /*  height: calc(95.6vh);  */
+}
+
+.page-layout > .otherSection {
+  margin-left: 160px;
+  margin-top: 4em;
 }
 
 .addbookPage, .home, .singleBook {
