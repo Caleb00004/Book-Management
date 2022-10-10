@@ -8,27 +8,35 @@ import AddBook from './pages/AddBookPage';
 import Navbar from './components/Navbar';
 import SideNav from './components/SIdeNav';
 import SingleBook from './features/books/singleBook'
+import EditBook from './features/books/EditBooks';
 
 function App() {
-  const {isSuccess: authorLoaded, data: authors} = useGetAuthorQuery()
-  const {data: books, isSuccess: bookLoaded, isLoading, isError, error} = useGetBooksQuery()
-//  console.log(books)  
-//  console.log(useGetBooksQuery().data)
-//console.log(authors)
-//console.log(books)
+  const {status: authorStatus, data: authors} = useGetAuthorQuery()
+  const {data: books, status: bookStatus, error} = useGetBooksQuery()
+  console.log(useGetBooksQuery())
+  //  console.log(books)  
+  //  console.log(useGetBooksQuery().data)
+  //console.log(authors)
+  //console.log(books)
+
   return (
     <>
       <Navbar />
       <div className='page-layout'>
         <SideNav />
         <Routes>
-          <Route path='/' element={<Home bookData={books} authorData={authors} authorLoaded={authorLoaded} bookLoaded={bookLoaded} error={error} loading={isLoading}/>}></Route>
+          <Route path='/' element={<Home bookData={books} authorData={authors} error={error} bookStatus={bookStatus} authorStatus={authorStatus}/>}></Route>
 
           <Route path='/booklist' element={<BookList />}></Route>
-          <Route path='/singlePage/:bookId' element={<SingleBook />} />
+{/*          <Route path='/singlePage/:bookId' element={<SingleBook />} /> */}
+
+          <Route path='singlePage'>
+            <Route path=':bookId' element = {<SingleBook />}></Route>
+            <Route path='/singlePage/edit/:bookId' element={<EditBook />}></Route>
+          </Route>
 
           <Route path='addbook'>
-            <Route index  element={<AddBook authorLoaded={authorLoaded} authorData={authors}/>} />
+            <Route index  element={<AddBook status={authorStatus} authorData={authors}/>} />
           </Route>
 
           <Route path='/checkout' element={<Checkout />} />

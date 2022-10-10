@@ -10,16 +10,16 @@
     {
       "userId": 3,
       "id": 3,
-      "title": "Binance Futures",
+      "title": "Binance Futures Test",
       "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": 50
+      "price": "100"
     },
     {
-      "userId": 4,
+      "userId": 1,
       "id": 4,
-      "title": "Binance Futures",
+      "title": "Binance Futures Trading",
       "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": 50
+      "price": "100"
     },
     {
       "id": 16,
@@ -37,17 +37,17 @@
     },
     {
       "id": "gQtAOwdIMdCPzWa4uhrG-",
-      "userId": 3,
-      "title": "A tale of will smith",
-      "summary": "keep my wife's name out yo FUNCKING MOUTH!!!",
-      "price": "4000"
+      "userId": 2,
+      "title": "A Tale of Will Smith",
+      "summary": "keep my wife's name out yo FUCKING MOUTH!!!",
+      "price": "3000"
     },
     {
       "id": "-M6ym7G9bOQwMCqcER4an",
-      "userId": 4,
-      "title": "YES",
-      "summary": "Yes i said it cause i can, the day i don't feel like donig anything",
-      "price": "80"
+      "userId": 1,
+      "title": "YES MAN",
+      "summary": "OK lets talk about the difference between a red orange and a blue tank top.",
+      "price": "200"
     },
     {
       "id": "NVV1plhKLl2Gws1odkM86",
@@ -55,6 +55,13 @@
       "title": "Lorem ipsum",
       "summary": "lorem ipsum dolor init muil maximilla madibulla ipsum lorem dolor",
       "price": "2000"
+    },
+    {
+      "id": "BUodPoaOvSTnLJhyS2Fw7",
+      "userId": 3,
+      "title": "My First Publish",
+      "summary": "This Books Talks about what are the benefit and what are the non-benefits of being a boy.It looks at different perspective and manhood and boyhood.",
+      "price": "15"
     }
   ],
   "author": [

@@ -44,6 +44,17 @@ export const apiSlice = createApi({
                 }
             },
             invalidatesTags: ['book']
+        }),
+        editBook: builder.mutation({
+            query: (newBook) => {
+                console.log(newBook)
+                return {
+                    url: `/books/${newBook.id}`,
+                    method: 'PATCH',
+                    body: newBook
+                }
+            },
+            invalidatesTags: ['book']
         })
     })
 })
@@ -52,5 +63,6 @@ export const {
     useGetBooksQuery,
     useGetAuthorQuery,
     useAddBooksMutation,
-    useDeleteBookMutation
+    useDeleteBookMutation,
+    useEditBookMutation
 } = apiSlice

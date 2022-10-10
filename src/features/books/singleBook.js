@@ -6,6 +6,7 @@ import './singleBook.css'
 
 export default function SingleBook() {
     const navigateTo = useNavigate()
+
     const {bookData, AuthorsData} = globalState
     const {bookId} = useParams()
     const [deleteBook, isSuccess] = useDeleteBookMutation()
@@ -39,7 +40,7 @@ export default function SingleBook() {
 
             <div className="button-group">
                 <button onClick={() => handleDelete()} className="delete-btn">Delete</button>
-                <button className="edit-btn">Edit Book</button>
+                <button onClick={() => navigateTo(`/singlePage/edit/${currentBook[0].id}`)} className="edit-btn">Edit Book</button>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import BookExcerpt from '../features/books/bookExcerpt'
 import { globalState } from '../features/api/apiSlice'
 import './home.css'
 
-export default function Home({bookData, authorData, authorLoaded, bookLoaded, error, loading}) {
+export default function Home({bookData, authorData, authorStatus, bookStatus, error,}) {
 
 //    console.log(globalState)
 //    const navigateTo = useNavigate()
@@ -15,9 +15,9 @@ export default function Home({bookData, authorData, authorLoaded, bookLoaded, er
     } */
 
     let content;
-    if (loading) {
+    if (bookStatus == 'pending') {
         content = <h1>Loading Data</h1>
-    } else if (bookLoaded && authorLoaded) {
+    } else if (bookStatus == 'fulfilled' && authorStatus == 'fulfilled') {
         content = bookData.map(item => (
             <BookExcerpt bookData={item} authorData={authorData}/>
 /*            <div className='book-item' onClick={() => navigateTo('/singlePage/23')}>
@@ -27,7 +27,7 @@ export default function Home({bookData, authorData, authorLoaded, bookLoaded, er
                 <p>{item.summary.substring(0,50)} <span style={{color:'purple', fontStyle:'italic'}}>more...</span></p>
         </div> */
         ))
-    } else {
+    } else if (bookStatus == 'rejected') {
         content = <h1>Error occured: {error.error}</h1>
         console.log(error)
     }

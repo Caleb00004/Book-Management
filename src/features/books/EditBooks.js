@@ -1,61 +1,81 @@
-import { retry } from "@reduxjs/toolkit/dist/query"
-import { useNavigate } from "react-router"
-import { useState } from "react"
-import { useAddBooksMutation } from "../features/api/apiSlice"
-import { nanoid } from "nanoid"
-import './addbook.css'
-
-export default function AddBook({status, authorData}) {
+import { globalState } from "../api/apiSlice"
+import { useParams, useNavigate } from "react-router"
+import { useEditBookMutation } from "../api/apiSlice"
+import { useEffect, useState } from "react"
+export default function EditBook() {
 
     const [bookTitle, setBookTitle] = useState('')
     const [bookSummary, setBookSummary] = useState('')
     const [bookPrice, setBookPrice] = useState('')
     const [authorId, setAuthorId] = useState('')
     const [addRequestStatus, setAddRequestStatus] = useState('idle')
-    const [addBook] = useAddBooksMutation()
+    const [displayErrorMessage, setDisplayErrorMessage] = useState(false)
+    const [editBook] = useEditBookMutation()
+    
     const navigate = useNavigate()
 
-    if (status == 'pending') {
-        return <h1>Data Loading</h1>
-    } else if (status == 'rejected') {
-        return <h1>Error Loading Data</h1>
-    }
-    
-    const authorList = authorData.map(author => (
+    const {bookId} = useParams()
+    const {bookData, AuthorsData} = globalState
+
+    let {title, summary, price, userId, id} = bookData.find(state => state.id == bookId)
+
+    useEffect(() => {
+        setBookTitle(title)
+        setBookSummary(summary)
+        setBookPrice(price)
+        setAuthorId(userId)
+    },[])
+
+    const authorList = AuthorsData.map(author => (
         <option key={author.id} value={author.id}>{author.name}</option>
     ))
+
+    const canAdd = [bookTitle, bookSummary, bookPrice].every(Boolean) && addRequestStatus == 'idle'
     
     function handleForm(e) {
-        console.log(e)
+        displayErrorMessage && setDisplayErrorMessage(false)
         e.preventDefault()
 
+        console.log(bookTitle)
+        console.log(bookSummary)
         console.log(authorId)
+
         if (addRequestStatus == 'idle') {
 
             console.log(authorId)
 
             try {
                 setAddRequestStatus('pending')
-                addBook({id: nanoid(), userId: Number(authorId), title: bookTitle, summary: bookSummary, price: bookPrice}).unwrap()
-                    .then(fulfilled => navigate('/'))
-                    .catch(rejected => console.error(rejected)) 
+                editBook({id: id, userId: Number(authorId), title: bookTitle, summary: bookSummary, price: bookPrice}).unwrap()
+                    .then(fulfilled => ( 
+                        displayErrorMessage && setDisplayErrorMessage(false),
+                        setBookTitle(''),
+                        setBookSummary(''),
+                        setBookPrice(''),
+                        navigate('/') 
+                    ))
+                    .catch(rejected => (
+                        console.error(rejected),
+                        setDisplayErrorMessage(true)                        
+                    ))
 
-                setBookTitle('')
-                setBookSummary('')
-                setBookPrice('')
             } catch (err) {
                 console.error('Failed to save the post', err)
+                setDisplayErrorMessage(true)
             } finally {
                 setAddRequestStatus('idle')
             }
-        }
-    }
-
-    const canAdd = [bookTitle, bookSummary, bookPrice].every(Boolean) && addRequestStatus == 'idle'
+        } 
+    } 
+    /*
+    function handleForm() {
+        editBook
+        console.log('called')
+    } */
 
     return (
         <div className="addbookPage">
-            <h1>AddBook kk</h1>
+            <h1>Edit Book</h1>
 
             <form onSubmit={handleForm}>
                 <div>
@@ -98,8 +118,8 @@ export default function AddBook({status, authorData}) {
                 <button disabled={!canAdd} className="submit">
                     submit
                 </button>
+                {displayErrorMessage && <h1 style={{color: 'red'}}>Error Saving Data Plese Try again</h1>}
             </form>
         </div>
-
     )
 }

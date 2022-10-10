@@ -5,8 +5,10 @@ import App from './App';
 import { apiSlice } from './features/api/apiSlice';
 import { ApiProvider } from '@reduxjs/toolkit/dist/query/react';
 import { BrowserRouter as Router } from 'react-router-dom';
-
+import { useGetBooksQuery, useGetAuthorQuery } from './features/api/apiSlice';
+//import { useGetAuthorQuery } from './features/api/apiSlice';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <Router>
@@ -15,5 +17,4 @@ root.render(
       </ApiProvider>
     </Router>
   </React.StrictMode>
-);
-
+)
