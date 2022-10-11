@@ -34,15 +34,13 @@ export default function Home({bookData, authorData, authorStatus, bookStatus, er
 
     return (
         <div className='home'>
-            <h1>The Home Page</h1>
-
             <div className='Hero-Section'>
                 <h2>Book Management</h2>
                 <button>Discover More</button>
             </div>
             <br/><br/>
             <h2>Books Availble</h2>
-            <br/><br/>
+            <br/>
             <div className='books-grid'>
                 {content}
             </div>

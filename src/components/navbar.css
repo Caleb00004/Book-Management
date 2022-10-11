@@ -17,7 +17,10 @@ nav {
     margin-left: auto;
 }
 
-.nav-right > button {
+.nav-right > a {
+    align-self: center;
+}
+.nav-right > a button {
     margin-left: 1rem;
     margin-right: 1rem;
     border-radius: 5px;
@@ -28,6 +31,52 @@ nav {
     height: 30px;
 }
 
+.nav-right > a button:hover {
+    background-color: rgb(179, 42, 179);
+    color: white;
+}
+
 .nav-right p , svg {
     align-self: center;
 }
+
+.nav-right li a, .dropbtn {
+    display: inline-block;
+    color: black;
+
+    text-align: center;
+    padding: 9px 16px;
+    text-decoration: none;
+  }
+  
+.nav-right li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+  }
+  
+.nav-right  li.dropdown {
+    display: inline-block;
+  }
+  
+  .nav-right  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    font-size: 0.9rem;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .nav-right .dropdown  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

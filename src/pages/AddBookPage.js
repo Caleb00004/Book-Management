@@ -51,11 +51,11 @@ export default function AddBook({status, authorData}) {
         }
     }
 
-    const canAdd = [bookTitle, bookSummary, bookPrice].every(Boolean) && addRequestStatus == 'idle'
+    const canAdd = [bookTitle, bookSummary, bookPrice, authorId].every(Boolean) && addRequestStatus == 'idle'
 
     return (
         <div className="addbookPage">
-            <h1>AddBook kk</h1>
+            <h1 style={{textAlign: 'center'}}>Add New Books</h1>
 
             <form onSubmit={handleForm}>
                 <div>

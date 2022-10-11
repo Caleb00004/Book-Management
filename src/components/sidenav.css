@@ -1,5 +1,5 @@
 * {
-/*    outline: 1px solid limegreen !important;  */
+/*    outline: 1px solid limegreen;  */
 }
 
 .sideNav {
@@ -13,20 +13,22 @@
     z-index: 1; /* Stay on top */
     top: 0; 
     left: 0;
-
-/*    display: flex;
-    position: sticky;
-    top: 0;
-    flex-direction: column; */
-/*    padding-top: 2em;
-    min-height: 94.5vh;
-*/
 }
+
 
 .sideNav ul {
     margin-top: 1.5em;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
+
+.sideNav .icon-links {
+    margin-top: 21em;
+    display: flex;
+    justify-content: space-around;
+}
+
 
 .sideNav > ul > li {
     padding-left: 1.4em;

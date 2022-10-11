@@ -4,7 +4,7 @@
       "userId": 1,
       "id": 1,
       "title": "How to be Rich!!",
-      "summary": "This wonderful book Talks about what is the main essesne of making bread because break yeahh is very good your health.",
+      "summary": "This wonderful book Talks about what is the main essense of making bread because bread yeahh is very good your health.",
       "price": 200
     },
     {
@@ -17,9 +17,9 @@
     {
       "userId": 2,
       "id": 4,
-      "title": "Beginners guide to binance Futures",
+      "title": "Binance Trading ",
       "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": "50"
+      "price": "100"
     },
     {
       "id": 16,
@@ -60,8 +60,15 @@
       "id": "BUodPoaOvSTnLJhyS2Fw7",
       "userId": 3,
       "title": "My First Publish",
-      "summary": "This Books Talks about what are the benefit and what are the non-benefits of being a boy.It looks at different perspective and manhood and boyhood.",
+      "summary": "This Book Talks about what are the benefit and what are the non-benefits of being a boy. It looks at the different perspective of manhood and boyhood.",
       "price": "15"
+    },
+    {
+      "id": "Lgitjvnb13wJlpeRDxckr",
+      "userId": 3,
+      "title": "Testing ",
+      "summary": "This is a New book That I just Taught Off",
+      "price": "20"
     }
   ],
   "author": [
