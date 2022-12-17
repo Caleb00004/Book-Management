@@ -24,25 +24,28 @@
 }
 
 .sideNav .icon-links {
-    margin-top: 21em;
+    margin-top: 45vh;
     display: flex;
     justify-content: space-around;
 }
 
-
-.sideNav > ul > li {
+.sideNav > ul > a {
+    color: black;
+    text-decoration: none;
     padding-left: 1.4em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     list-style-type: none;
-    padding-bottom: 1.5em;
 }
 
-.sideNav > ul > li:hover {
+.sideNav > ul > a:hover {
     background-color: gray;
 }
 
 .sideNav ul li a {
     text-decoration: none;
     color: black;
+
 }
 
 .icon-div {
@@ -54,3 +57,11 @@
     padding-left: 0.6em;
     font-size: 1.5rem;
 }
+
+@media screen and (max-width: 900px) {
+
+    .sideNav {
+        display: none;
+    }
+}
+

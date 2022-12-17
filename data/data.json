@@ -12,63 +12,77 @@
       "id": 3,
       "title": "Binance Futures Test",
       "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": "100"
+      "price": 100
     },
     {
       "userId": 2,
       "id": 4,
       "title": "Binance Trading ",
-      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. et a 30% refun on first 30 days.",
-      "price": "100"
+      "summary": "Learn how to use binance futures platform and how to trade and make profits daily. at a 30% refund on first 30 days.",
+      "price": 100
     },
     {
       "id": 16,
       "userId": 4,
       "title": "A tale of 2 Goats",
       "summary": "A tale of 2 goats, A tale of style and pizzaz of 2 men. One skilled in the art of Goal scoring, the other skilled in the art of Playing Football. There is only One Goat. A tale of 2 Goats.",
-      "price": "200"
+      "price": 200
     },
     {
       "id": 10,
       "userId": 4,
       "title": "Jack Grealish",
       "summary": "A day in a life let's see if you really trao, turn off the autotunes let's here you really rao. hahah send a location, i'm speeding 20 bags on aj's",
-      "price": "20"
+      "price": 20
     },
     {
       "id": "gQtAOwdIMdCPzWa4uhrG-",
       "userId": 2,
       "title": "A Tale of Will Smith",
       "summary": "keep my wife's name out yo *Beep* MOUTH!!!",
-      "price": "3000"
+      "price": 3000
     },
     {
       "id": "-M6ym7G9bOQwMCqcER4an",
       "userId": 1,
       "title": "YES MAN",
       "summary": "OK lets talk about the difference between a red orange and a blue tank top.",
-      "price": "200"
+      "price": 200
     },
     {
       "id": "NVV1plhKLl2Gws1odkM86",
       "userId": 1,
       "title": "Lorem ipsum",
       "summary": "lorem ipsum dolor init muil maximilla madibulla ipsum lorem dolor",
-      "price": "2000"
+      "price": 2000
     },
     {
       "id": "BUodPoaOvSTnLJhyS2Fw7",
       "userId": 3,
       "title": "My First Publish",
       "summary": "This Book Talks about what are the benefit and what are the non-benefits of being a boy. It looks at the different perspective of manhood and boyhood.",
-      "price": "15"
+      "price": 15
     },
     {
       "id": "Lgitjvnb13wJlpeRDxckr",
       "userId": 3,
       "title": "Testing ",
       "summary": "This is a New book That I just Taught Off",
-      "price": "20"
+      "price": 20
+    },
+    {
+      "id": "wGTNg1uXIYFL4_URoFdpR",
+      "userId": 3,
+      "title": "Yes ",
+      "summary": "Put the pause bitton on the weak you",
+      "price": 300
+    },
+    {
+      "id": "oq-_mJhWLkn141BmymVR6",
+      "userId": 3,
+      "title": "Test Book Title",
+      "summary": "lorem ipsum dolor init imuit maximilla dibulla",
+      "price": 100
     }
   ],
   "author": [

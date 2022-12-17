@@ -1,9 +1,6 @@
-* {
-/*    outline: 1px solid limegreen !important;  */
-}
-
 .book-list {
     text-align: center;
+    padding-bottom: 1em;
 }
 
 .book-list ul {
@@ -32,4 +29,10 @@
 .book-list ul li a {
     text-decoration: none;
     color: blue;
+}
+
+@media screen and (max-width: 800px) {
+    .book-list ul {
+        width: 85%;
+    }   
 }

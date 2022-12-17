@@ -1,0 +1,41 @@
+.checkout-page {
+    text-align: center;
+}
+
+table {
+
+    width: 100%;
+}
+
+th {
+    font-weight: bolder;
+    font-size: 1.4em;
+    color: purple;
+}
+
+table th, td {
+
+    padding: 10px;
+    text-align: justify;
+}
+
+.bookname-icon {
+    display: flex;
+}
+
+.bookname-icon p {
+    padding-left: 10px;
+}
+
+.order-btn {
+    border: none;
+    border-radius: 5px;
+    margin: 1em 1em 0px 1em;
+    padding: 0.6em 2em 0.6em 2em;
+    color: white;
+    background-color: purple;
+}
+
+button:disabled{
+    opacity: 0.7;
+}

@@ -4,6 +4,10 @@
 /*  height: calc(95.6vh);  */
 }
 
+h1 {
+  font-size: clamp(1.7em, 1.8vw, 1.8em);
+  padding-bottom: 0.5em;
+}
 .page-layout > .otherSection {
   margin-left: 160px;
   margin-top: 4em;
@@ -12,5 +16,55 @@
 .addbookPage, .home, .singleBook {
   padding-left: 2em;
   padding-right: 2em; 
+  padding-bottom: 1em;
 }
 
+.alert {
+  background-color: rgb(169, 48, 188, 0.8);
+  color: white;
+  position: absolute;
+  padding: 1% 1%;
+  font-size: clamp(0.8em, 1.1vw, 1.1em);
+  border-radius: 5px;
+  width: 45%;
+  z-index: 9;
+  margin-top: 1em;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+#hide {
+/*  display: none; */
+  opacity: 0;
+  transition: 0.2s;
+}
+
+#show {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .page-layout > .otherSection {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .addbookPage, .home, .singleBook {
+    padding-left: 1em;
+    padding-right: 1em; 
+  }
+
+  .alert {
+    width: 80%;
+    padding: 1.7% 1.7%;
+    margin-top: 1em;
+  }
+}

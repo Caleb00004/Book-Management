@@ -1,6 +1,5 @@
 .home {
 /*    background-color: red; */
-
 }
 
 .Hero-Section {
@@ -43,11 +42,24 @@
     box-shadow: 6px 8px 8px -6px black;    
 }
 
+.book-item h3 {
+    font-size: clamp(1.1em,1.7vw, 1.8em);
+}
+
 .book-item p {
     max-width: 100%;
-    font-size: 0.8rem;
+    font-size: clamp(0.8em, 1vw, 1.1em);
 }
 
 .book-item .author {
     font-style: italic;
+}
+
+@media screen and (max-width: 800px) {
+    .books-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+    
 }

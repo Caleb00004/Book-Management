@@ -36,7 +36,7 @@ export default function AddBook({status, authorData}) {
 
             try {
                 setAddRequestStatus('pending')
-                addBook({id: nanoid(), userId: Number(authorId), title: bookTitle, summary: bookSummary, price: bookPrice}).unwrap()
+                addBook({id: nanoid(), userId: Number(authorId), title: bookTitle, summary: bookSummary, price: Number(bookPrice)}).unwrap()
                     .then(fulfilled => navigate('/'))
                     .catch(rejected => console.error(rejected)) 
 

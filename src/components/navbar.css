@@ -4,6 +4,7 @@ nav {
     height: 2.5rem;
     top: 0; */
     display: flex;
+
     background-color: #F0F0F2;
     border-bottom: 0.1px solid #A9A4C7;
     position: fixed; /* Set the navbar to fixed position */
@@ -12,14 +13,27 @@ nav {
     width: 100%; /* Full width */
 }
 
+nav > svg {
+  display: none;
+}
+
+nav h3 {
+  color: rgb(182, 42, 182);
+  padding-top: 7px;
+  font-size: clamp(1.1em, 1.4vw, 1.5em);
+  padding-left: 0.6em;
+}
+
 .nav-right {
     display: flex;
     margin-left: auto;
+    margin-right: 0.5em;
 }
 
 .nav-right > a {
     align-self: center;
 }
+
 .nav-right > a button {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -29,6 +43,7 @@ nav {
     padding: 5px 15px 5px 15px;
     align-self: center;
     height: 30px;
+    font-size: clamp(0.8em, 1.1vw, 1em);
 }
 
 .nav-right > a button:hover {
@@ -50,22 +65,30 @@ nav {
   }
   
 .nav-right li a:hover, .dropdown:hover .dropbtn {
-    background-color: white;
-  }
+  background-color: white;
+}
   
 .nav-right  li.dropdown {
-    display: inline-block;
-  }
-  
-  .nav-right  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    font-size: 0.9rem;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
+  display: inline-block;
+}
+
+.dropdown {
+  font-size: clamp(0.8em, 1.1vw, 1em);
+}
+
+.dropdown > a {
+
+}
+
+.nav-right  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  font-size: clamp(0.8rem, 1.1vw, 1em);
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
   
   .nav-right .dropdown  .dropdown-content a {
     color: black;
@@ -80,3 +103,46 @@ nav {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+.drop-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+/*        z-index: 9; */
+    margin-top: 3.1em;
+    background-color: #F0F0F2;
+    color: red;
+    list-style-type: none;
+/*        height: 15em; */
+    width: 100%;
+    font-size: clamp(0.8em, 0.9vw, 1em);
+    overflow: hidden;
+}
+
+.drop-nav a {
+  padding: 1em;
+  text-decoration: none;
+}
+
+nav #open{
+  height: auto;
+}
+
+nav #close {
+  height: 0;
+}
+
+@media screen and (max-width: 900px) {
+  nav h3 {
+    display: none;
+  }
+
+  nav > svg {
+    display: flex;
+    margin-left: 1em;
+  }
+
+  .dropdown .dropbtn {
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+}
