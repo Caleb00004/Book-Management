@@ -2,6 +2,7 @@ import { globalState } from "../api/apiSlice"
 import { useParams, useNavigate } from "react-router"
 import { useEditBookMutation } from "../api/apiSlice"
 import { useEffect, useState } from "react"
+
 export default function EditBook({bookStatus, authorStatus}) {
 
     const [bookTitle, setBookTitle] = useState('')
@@ -35,9 +36,9 @@ export default function EditBook({bookStatus, authorStatus}) {
         setBookSummary(data.summary)
         setBookPrice(data.price)
         setAuthorId(data.userId)
-    },[data])
+    },[])
 
-    console.log('one')
+//    console.log('one')
     if(bookStatus == 'fulfilled' && authorStatus == 'fulfilled'){
         let currentBook = bookData.find(state => state.id == bookId)
         data.title = currentBook.title

@@ -36,12 +36,12 @@ export default function SingleBook({addCart, removeCart, cart, bookStatus, autho
                 .then(fulfilled => navigateTo('/'))
                 .catch(rejected => console.error(rejected)) 
                 
-    //        navigateTo('/')
+//            navigateTo('/')
         }
         
         function cartIcon() {
             let itemInCart = cart.some((item)=>{ 
-                return item.id == currentBook[0].id 
+                return item.id == currentBook[0].id
               })
             
               console.log(cart)

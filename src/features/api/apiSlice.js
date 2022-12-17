@@ -8,7 +8,8 @@ export const globalState = {
 export const apiSlice = createApi({
     reducerPath: 'api',
     tagTypes: ['book'],
-    baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:5000'}),
+    // baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:4000/'}),
+    baseQuery: fetchBaseQuery({baseUrl: `https://my-api-production-622f.up.railway.app`}),
     endpoints: builder => ({
         getBooks: builder.query({
             query: () => '/books',
@@ -35,7 +36,7 @@ export const apiSlice = createApi({
         }),
         deleteBook: builder.mutation({
             query: (book) => {
-                console.log(book)
+//                console.log(book)
                 const {id} = book
                 return {
                     url: `/books/${id}`,
@@ -47,7 +48,7 @@ export const apiSlice = createApi({
         }),
         editBook: builder.mutation({
             query: (newBook) => {
-                console.log(newBook)
+//                console.log(newBook)
                 return {
                     url: `/books/${newBook.id}`,
                     method: 'PATCH',

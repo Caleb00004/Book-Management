@@ -16,7 +16,7 @@ export default function AddBook({status, authorData}) {
     const navigate = useNavigate()
 
     if (status == 'pending') {
-        return <h1>Data Loading</h1>
+        return <h1>Data Loading...</h1>
     } else if (status == 'rejected') {
         return <h1>Error Loading Data</h1>
     }
@@ -26,13 +26,11 @@ export default function AddBook({status, authorData}) {
     ))
     
     function handleForm(e) {
-        console.log(e)
+//        console.log(e)
         e.preventDefault()
 
-        console.log(authorId)
         if (addRequestStatus == 'idle') {
-
-            console.log(authorId)
+//            console.log(authorId)
 
             try {
                 setAddRequestStatus('pending')

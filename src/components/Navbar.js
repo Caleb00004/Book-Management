@@ -26,7 +26,7 @@ export default function Navbar({cart}) {
             <h3>Book Management</h3>
             <div className='nav-right'>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Other Projects<i class="fa fa-caret-down">▾</i></a>
+                <a class="dropbtn">Other Projects<i class="fa fa-caret-down">▾</i></a>
                 <div class="dropdown-content">
                 <a target={'_blank'} href="https://crypto-tracker-rosy.vercel.app/">crypto Tracker</a>
                 <a target={'_blank'} href="https://ornate-tulumba-3e1234.netlify.app/">Quizzical</a>
