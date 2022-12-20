@@ -1,6 +1,6 @@
 ## Book Management
 
-###About
+### About
 This is a CRUD Application built with React, Redux RTK, Node and Express.JS 
 Redux RTK was used to manage state & api data and exprees & node was used to build the CRUD api.
 
